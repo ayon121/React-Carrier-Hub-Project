@@ -1,8 +1,9 @@
 
 import PropTypes from 'prop-types';
 import { CiLocationOn , CiBadgeDollar} from 'react-icons/ci';
+import { Link } from 'react-router-dom';
 const Job = ({ job }) => {
-    const { logo, job_title, company_name, remote_or_onsite, location, job_type, salary, job_description, job_responsibility, educational_requirements, experiences } = job
+    const {id, logo, job_title, company_name, remote_or_onsite, location, job_type, salary, job_description, job_responsibility, educational_requirements, experiences } = job
     return (
         <div className="card bg-base-100 shadow-xl">
             <figure><img className='mt-3 pt-5' src={logo} alt="Shoes" /></figure>
@@ -21,7 +22,7 @@ const Job = ({ job }) => {
 
                 </div>
                 <div className="card-actions justify-start">
-                    <button className="btn btn-primary">View Details</button>
+                    <Link to={`job/${id}`}><button className="btn btn-primary">View Details</button></Link>
                 </div>
             </div>
         </div>
