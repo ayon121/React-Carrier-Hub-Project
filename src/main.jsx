@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+
 import './index.css'
 
 import {
@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import Root from './Components/Root/Root.jsx';
 import Home from './Components/Home/Home.jsx';
+import AppliedJobs from './Components/Applied_Jobs/AppliedJobs';
 
 
 
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>
+      },
+      {
+        path: '/applied',
+        element : <AppliedJobs></AppliedJobs>
       }
     ]
   },
