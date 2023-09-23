@@ -31,7 +31,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Start Apply</a>
+                <a className="btn px-4 py-3 border-black bg-base-200">Start Apply</a>
             </div>
         </div>
     );

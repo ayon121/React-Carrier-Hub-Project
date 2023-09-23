@@ -30,7 +30,7 @@ const JobDetails = () => {
             <p className='mt-3'><b>Experiences: </b>{experiences}</p>
             <p className='mt-3'><b>Job Responsibility: </b>{job_responsibility}</p>
             <h2 className='text-xl font-bold mt-4'>Salary: {salary}</h2>
-            <button onClick={handleApplyJob} className='btn mt-5'>Apply Now</button>
+            <button onClick={handleApplyJob} className='btn mt-5 px-4 py-3 border-black bg-base-200'>Apply Now</button>
             <ToastContainer></ToastContainer>
 
 

@@ -59,20 +59,20 @@ const AppliedJobs = props => {
                 <h1 className='text-6xl text-center mt-6 mb-14'>You Did Not Applied In Any Jobs</h1>
                 <h1 className='text-4xl text-center mt-6 mb-14'>Go And Find A Jobs For You</h1>
                 <div className='flex justify-center'>
-                    <button className='btn btn-primary mt-3 mb-4 '>Apply Now</button>
+                    <button className='btn px-4 py-3 border-black bg-base-200 mt-3 mb-4 '>Apply Now</button>
                 </div>
              </div>
              <div className={displayjobs == 0 || 'hidden'}>
                 <h1 className='text-6xl text-center mt-6 mb-14'>There Are No Jobs Found</h1>
                 <div className='flex justify-center'>
-                    <button className='btn btn-primary mt-3 mb-4 '>Apply Now</button>
+                    <button className='btn px-4 py-3 border-black bg-base-200 mt-3 mb-4 '>Apply Now</button>
                 </div>
              </div>
              <div className={displayjobs == 0 && 'hidden'}>
                 <div className='flex gap-4 justify-center mt-8'>
-                    <button className='btn btn-primary' onClick={() => handleJobsFilter('all')}>All</button>
-                    <button className='btn btn-primary'  onClick={() => handleJobsFilter('remote')}>Remote</button>
-                    <button className='btn btn-primary'  onClick={()=> handleJobsFilter('onsite')}>Onsite</button>
+                    <button className='btn px-4 py-3 border-black bg-base-200' onClick={() => handleJobsFilter('all')}>All</button>
+                    <button className='btn px-4 py-3 border-black bg-base-200'  onClick={() => handleJobsFilter('remote')}>Remote</button>
+                    <button className='btn px-4 py-3 border-black bg-base-200'  onClick={()=> handleJobsFilter('onsite')}>Onsite</button>
                 </div>
              </div>
         </div>
