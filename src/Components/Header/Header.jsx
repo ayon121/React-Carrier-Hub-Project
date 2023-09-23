@@ -4,13 +4,17 @@ import { NavLink } from 'react-router-dom';
 
 
 const Header = () => {
+    const activeLinkStyle = {
+        fontWeight: 'bold',
+        color: 'blue',
+    };
 
     const links = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/jobs">Jobs</NavLink></li>
-        <li><NavLink to="/applied">Applied Jobs</NavLink></li>
-        <li><NavLink to="/statistcs">Statistcs</NavLink></li>
-        <li><NavLink to="/blogs">Blogs</NavLink></li>
+        <li><NavLink  to="/" className={({ isActive }) => isActive ? 'bg-base-200 font-bold' : 'bg-transparent'}>Home</NavLink></li>
+        <li><NavLink to="/jobs" className={({ isActive }) => isActive ? 'bg-base-200 font-bold' : 'bg-transparent'}>Jobs</NavLink></li>
+        <li><NavLink to="/applied" className={({ isActive }) => isActive ? 'bg-base-200 font-bold' : 'bg-transparent'}>Applied Jobs</NavLink></li>
+        <li><NavLink to="/statistcs" className={({ isActive }) => isActive ? 'bg-base-200 font-bold' : 'bg-transparent'}>Statistcs</NavLink></li>
+        <li><NavLink to="/blogs" className={({ isActive }) => isActive ? 'bg-base-200 font-bold' : 'bg-transparent'}>Blogs</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100">
