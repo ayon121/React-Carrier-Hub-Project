@@ -4,6 +4,7 @@ import { useLoaderData, useParams } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {saveJobApplication} from "../../Utility/localStorage"
+import { Helmet } from 'react-helmet-async';
 const JobDetails = () => {
     const jobs = useLoaderData();
     const {id} = useParams();
@@ -17,6 +18,9 @@ const JobDetails = () => {
     }
     return (
         <div>
+            <Helmet>
+                <title>Career Hub | Job Details</title>
+            </Helmet>
             <h1 className='text-5xl text-center mt-6 mb-3 font-bold'>Job Details</h1>
             <p className='text-3xl mt-3 font-semibold '>{job_title}</p>
             <p className='text-xl mt-3 font-semibold'>{company_name}</p>
